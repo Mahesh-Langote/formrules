@@ -291,4 +291,20 @@ final List<RuleDemo> allRules = [
     hintText: 'Flutter',
     icon: Icons.code,
   ),
+  RuleDemo(
+    title: 'Min Value',
+    description: 'Ensures a numeric value is at least 10.',
+    codeSnippet: 'FormRules.required().min(10).build()',
+    validator: FormRules.required().min(10).build(),
+    hintText: 'Enter 10 or more',
+    icon: Icons.trending_up,
+  ),
+  RuleDemo(
+    title: 'Max Value',
+    description: 'Ensures a numeric value is at most 100.',
+    codeSnippet: 'FormRules.required().max(100).build()',
+    validator: FormRules.required().max(100).build(),
+    hintText: 'Enter 100 or less',
+    icon: Icons.trending_down,
+  ),
 ];

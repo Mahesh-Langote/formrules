@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: const Text(
-                    'v1.0.3',
+                    'v1.0.4',
                     style: TextStyle(
                         color: AppTheme.accent,
                         fontSize: 11,
