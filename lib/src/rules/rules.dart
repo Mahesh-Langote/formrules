@@ -222,6 +222,50 @@ class NumericRule extends ValidationRule {
   }
 }
 
+/// Rule that ensures a numeric value is at least [min].
+class MinRule extends ValidationRule {
+  /// The minimum value required.
+  final num min;
+
+  /// The error message.
+  final String message;
+
+  /// Creates a new [MinRule].
+  const MinRule(this.min, this.message);
+
+  @override
+  String? validate(String? value) {
+    if (value == null || value.isEmpty) return null;
+    final number = num.tryParse(value);
+    if (number == null || number < min) {
+      return message;
+    }
+    return null;
+  }
+}
+
+/// Rule that ensures a numeric value is at most [max].
+class MaxRule extends ValidationRule {
+  /// The maximum value allowed.
+  final num max;
+
+  /// The error message.
+  final String message;
+
+  /// Creates a new [MaxRule].
+  const MaxRule(this.max, this.message);
+
+  @override
+  String? validate(String? value) {
+    if (value == null || value.isEmpty) return null;
+    final number = num.tryParse(value);
+    if (number == null || number > max) {
+      return message;
+    }
+    return null;
+  }
+}
+
 /// Rule that ensures a value matches a custom regex pattern.
 class RegexRule extends ValidationRule {
   /// The regex pattern to match against.

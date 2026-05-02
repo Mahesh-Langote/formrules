@@ -1,6 +1,6 @@
 name: formrules
 description: A fluent, chainable Flutter form validator with a conflict-free static API, built-in rules, full localization support, and zero third-party dependencies.
-version: 1.0.3
+version: 1.0.4
 homepage: https://formrules.vercel.app
 repository: https://github.com/Mahesh-Langote/formrules
 

@@ -70,13 +70,16 @@ final class FormRules {
   static Validator countryCode({String? message}) =>
       Validator._()..countryCode(message: message);
 
-  /// Validates that the input is numeric.
-  ///
-  /// ```dart
-  /// FormRules.numeric().build()
-  /// ```
   static Validator numeric({String? message}) =>
       Validator._()..numeric(message: message);
+
+  /// Validates that a numeric value is at least [min].
+  static Validator min(num min, {String? message}) =>
+      Validator._()..min(min, message: message);
+
+  /// Validates that a numeric value is at most [max].
+  static Validator max(num max, {String? message}) =>
+      Validator._()..max(max, message: message);
 
   /// Validates against a custom regex pattern.
   ///
@@ -284,6 +287,18 @@ class Validator {
   /// Validates that the input is numeric.
   Validator numeric({String? message}) {
     _rules.add(NumericRule(message ?? _messages.numeric));
+    return this;
+  }
+
+  /// Validates that a numeric value is at least [min].
+  Validator min(num min, {String? message}) {
+    _rules.add(MinRule(min, message ?? _messages.min(min)));
+    return this;
+  }
+
+  /// Validates that a numeric value is at most [max].
+  Validator max(num max, {String? message}) {
+    _rules.add(MaxRule(max, message ?? _messages.max(max)));
     return this;
   }
 

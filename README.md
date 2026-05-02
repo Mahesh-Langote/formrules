@@ -54,7 +54,7 @@ TextFormField(
 
 > **Note:** The `.build()` call at the end of the chain is required. It converts the fluent builder into the `String? Function(String?)` closure expected by Flutter.
 
-## All 31 Built-in Rules
+## All 34 Built-in Rules
 
 | Rule | Description |
 |------|-------------|
@@ -62,8 +62,11 @@ TextFormField(
 | `email` | Validates an email address. |
 | `minLength(n)` | Validates a minimum length. |
 | `maxLength(n)` | Validates a maximum length. |
+| `min(val)` | Validates that a numeric value is at least `val`. |
+| `max(val)` | Validates that a numeric value is at most `val`. |
 | `url` | Validates a URL. |
 | `phone` | Validates a phone number. |
+| `countryCode` | Validates E.164 country dial codes. |
 | `numeric` | Validates that the input is numeric. |
 | `regex(pattern)` | Validates against a custom regex pattern. |
 | `match(getValue)` | Validates that the input matches another field. |

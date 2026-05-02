@@ -1,3 +1,9 @@
+## [1.0.4] - 2026-05-02
+
+### Added
+- Added `min()` and `max()` rules for numeric value range validation.
+- Updated example app with live demos for the new rules.
+
 ## [1.0.3] - 2026-05-02
 
 ### Added

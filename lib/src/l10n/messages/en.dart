@@ -26,6 +26,12 @@ class FormRulesMessagesEn {
   /// Message for the phone rule.
   String get phone => 'Enter a valid phone number.';
 
+  /// Message for the min rule.
+  String min(num min) => 'Must be at least $min';
+
+  /// Message for the max rule.
+  String max(num max) => 'Must be at most $max';
+
   /// Message for the countryCode rule.
   String get countryCode => 'Please enter a valid country code.';
 
