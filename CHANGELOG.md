@@ -1,3 +1,13 @@
+## [1.0.3] - 2026-05-02
+
+### Added
+- Added official live demo link: [formrules.vercel.app](https://formrules.vercel.app)
+
+## [1.0.2] - 2026-05-02
+
+### Added
+- Added high-quality screenshots to `README.md` to showcase library capabilities and UI.
+
 ## [1.0.1] - 2026-05-02
 
 ### Changed

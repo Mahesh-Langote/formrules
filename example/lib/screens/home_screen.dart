@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: const Text(
-                    'v1.0.1',
+                    'v1.0.3',
                     style: TextStyle(
                         color: AppTheme.accent,
                         fontSize: 11,
@@ -186,7 +186,7 @@ class HomeScreen extends StatelessWidget {
                 border: Border(top: BorderSide(color: AppTheme.border)),
               ),
               child: const Text(
-                'formrules — MIT License — github.com/Mahesh-Langote/formrules — pub.dev/packages/formrules',
+                'formrules — MIT License — github.com/Mahesh-Langote/formrules — formrules.vercel.app',
                 style: TextStyle(color: AppTheme.textMuted, fontSize: 12),
                 textAlign: TextAlign.center,
               ),

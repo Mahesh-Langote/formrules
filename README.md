@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)]()
 [![Flutter](https://img.shields.io/badge/Flutter-%E2%9D%A4-red.svg)]()
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://formrules.vercel.app)
 
 A comprehensive, zero-dependency, fail-fast, fluent validation library for Flutter `TextFormField`.
 
@@ -11,9 +12,23 @@ A comprehensive, zero-dependency, fail-fast, fluent validation library for Flutt
 
 1. **Zero External Dependencies**: Pure Dart. No `intl`, no bloat.
 2. **Fail-Fast**: Stops checking the moment a rule fails, returning the exact error message.
-3. **Fluent Chainable API**: Beautiful, readable builder syntax.
+3. **Fluent Chainable API**: Beautiful readable builder syntax.
 4. **Graceful Optionals**: By design, all rules (except `required`) pass silently if the input is `null` or empty, making optional fields a breeze.
 5. **Highly Extensible**: Easily add inline closures or full custom rule classes.
+
+## Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mahesh-Langote/formrules/main/screenshots/home_screen.png" width="800" alt="Home Screen Showcase">
+  <br>
+  <em>Rule Showcase Gallery</em>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mahesh-Langote/formrules/main/screenshots/registration_form.png" width="800" alt="Registration Form Demo">
+  <br>
+  <em>Comprehensive Registration Form Demo</em>
+</p>
 
 ## Getting Started
 
