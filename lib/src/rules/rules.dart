@@ -162,7 +162,8 @@ class PhoneRule extends ValidationRule {
       regex = pattern!;
     } else if (country != null) {
       regex = switch (country!) {
-        PhoneCountry.us => RegExp(r'^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$'),
+        PhoneCountry.us =>
+          RegExp(r'^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$'),
         PhoneCountry.uk => RegExp(r'^\+?44[\s.-]?\d{10}$'),
         PhoneCountry.india => RegExp(r'^\+?91[\s.-]?\d{10}$'),
         PhoneCountry.australia => RegExp(r'^\+?61[\s.-]?\d{9}$'),
