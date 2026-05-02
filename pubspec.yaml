@@ -1,7 +1,7 @@
 name: formrules
 description: A fluent, chainable Flutter form validator with a conflict-free static API, built-in rules, full localization support, and zero third-party dependencies.
-version: 1.0.0
-repository: https://github.com/maheshlangote/formrules
+version: 1.0.1
+repository: https://github.com/Mahesh-Langote/formrules
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
