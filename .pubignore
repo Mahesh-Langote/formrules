@@ -1,0 +1,4 @@
+# Files excluded from the published pub.dev package.
+# These are internal/development files not needed by consumers.
+
+SKILL.md
